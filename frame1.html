@@ -1,0 +1,49 @@
+<html>
+<head>
+    <style>
+        body {
+          background-image: url("c.jpg");
+          background-repeat: repeat-y;
+          background-size: 410px 670px;
+        }
+        </style></head>
+<title>Log in Page</title>
+<script type="text/javascript">
+function login(){
+    var x = document.getElementById("A").value;
+    var y = document.getElementById("B").value;
+    var z = document.getElementById("C").value;
+    if (x == "") {
+        window.alert("Please Fill The Email Id");
+    }
+    if (y ==""){
+        window.alert("Please Fill The Username.");
+    }
+    if (z==""){
+        window.alert("Please Fill Mobile Number")
+    }
+    else{
+        window.alert("You are logged in now , your Anihub Code is 42069");
+    }
+}
+</script>
+
+<body background=""><font color="white">
+<left><div class="title"><b><u>Quick Enquiry Form</u></b></div></left>
+<form name="f1">
+    <p>Enter Email Address :<BR>
+<input type="email" name = " Email" id="A" placeholder="Please Enter Your Email Id" size="25" autocomplete="off">
+    </p>
+    <p>Name: <BR>
+         <input type="text" name = " enquiry"  id="B" placeholder="Please Enter Your Name" size="25" autocomplete="off">
+         </p>
+         <p>Mobile Number : <BR>
+         <input type="text" name = " mobile_N"  id="C" placeholder="Please Enter Your Mobile Number" size="25" maxlength="10"  autocomplete="off">
+    </p>
+<input type ="submit" onclick="login()">
+<input type="reset" value = "Clear">        
+</form>
+</font>
+</body>
+
+</html>

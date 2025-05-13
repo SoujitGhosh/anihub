@@ -1,0 +1,57 @@
+<html>
+<head><style>
+body {
+    background-image: url("n.jpg");
+    background-repeat:no-repeat;
+    background-size: 1400px 1000px;
+  }
+  input.heighttext{
+  padding: 20px 10px;
+  line-height: 100px;
+}
+  </style></head>
+  <script type="text/javascript">
+    function feedback(){
+        var x = document.getElementById("A").value;
+        var y = document.getElementById("B").value;
+        var z = document.getElementById("C").value;
+        if (x == "") {
+            window.alert("Please Fill The Email Id");
+        }
+        if (y ==""){
+            window.alert("Please Fill The Feedback Form.");
+        }
+        if (z==""){
+            window.alert("Please Fill Your Anihub Code")
+        }
+        else{
+            window.alert("Thank You For Your Feedback!");
+        }
+}
+    </script>
+    
+    <body background=""><font color="white">
+    <left><div class="title"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>Feedback Form</u></b></div></left>
+    <form name="f1">
+             <p>Anihub Code : <BR>
+             <input type="text" name = " anihub_C"  id="C" placeholder="Enter Your Anihub Code" size="50" maxlength="5" autocomplete="off">
+        </p>
+    <p>Email Address :<BR>
+    <input type="email" name = " Email" id="A" placeholder="Please Enter Your Email Id" size="50" autocomplete="off" width="48" height="148">
+        </p>
+        <p>Feedback: <BR>
+            <input type="text" name = " enquiry"  id="B" placeholder="Comment" size="50"  style="height:80px;font-size:10pt;" autocomplete="off">
+            </p>
+    <button onclick="feedback()">Proceed</button>
+    <input type="reset" value = "Clear">        
+    </form>
+<center><font color="white">
+<br>
+<br>    
+<br>  
+<h2><b>For further enquiries feel free to connect at:</b></h2>
+<h3><b>soujit.ghosh@anihub.com</b></h3>
+</center>
+</font>
+</body>
+</html>

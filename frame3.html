@@ -1,0 +1,54 @@
+<html>
+<head>
+    <style>
+        body {
+          background-image: url("k.jpg");
+          background-repeat: no-repeat;
+          background-size: 1000px 500px;
+        }
+    </style>
+        
+ </head>
+<title>Log in Page</title>
+<script type="text/javascript">
+function feedback(){
+    var x = document.getElementById("A").value;
+    var y = document.getElementById("B").value;
+    var z = document.getElementById("C").value;
+    if (x == "") {
+        window.alert("Please Fill The Email Id");
+    }
+    if (y ==""){
+        window.alert("Please Fill The Feedback Form.");
+    }
+    if (z==""){
+        window.alert("Please Fill Your Anihub Code")
+    }
+    else{
+        window.alert("Thank You For Your Feedback!");
+    }
+}
+</script>
+
+<body background=""><font color="white">
+    <center>
+<left><div class="title"><u><b>Feedback Form</b></u></div></left>
+<form name="f1">
+    <p><center>Feedback: </center></p><BR>
+        <center><input type="text" name = " enquiry"  id="B" placeholder="Comment">
+         </p>
+         <p><center></center>Anihub Code : <BR>
+            <center><input type="text" name = " anihub_C"  id="C" placeholder="Enter Your Anihub Code">
+    </p>
+<p><center></center>Email Address :<BR>
+    <center></center><input type="email" name = " Email" id="A" style="width: 10000px; background-color: #f1f1f1;" placeholder="Please Enter Your Email Id">
+
+>
+    </p>
+<button onclick="feedback()">Proceed</button>
+<input type="reset" value = "Clear">        
+</form>
+</font>
+</center>
+</body>
+</html>
